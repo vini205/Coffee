@@ -308,8 +308,11 @@ footer h5{
   padding-left: 0;
 }
 .footer-links a{
-  font-size: 1.3em;
-  font-weight: 300;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #1F1F1F;
 }
 .footer-links > div{
   text-align: left; 
