@@ -19,18 +19,27 @@ body{
   padding-left: 3%;
   padding-right: 3%;
 }
-header{
-  display: flex;
-  justify-content: space-between;
+.header{
   padding-top: 1%;
 }
+.container-flex{
+  display: flex;
+}
+.container-flex-spaced{
+  justify-content: space-between;
+}
+
+.indicator-label{
+  background-color: white;
+  height: 2px;
+}
 .titulo{
-  font: normal 600 3.5rem/160% 'Playfair Display',serif;
+  font: normal 600 3rem/160% 'Playfair Display',serif;
   width: 50%;
   color: #FFFFFF;
 }
 .titulo>h1{
-  margin-top: 25%;
+  margin-top: 20%;
   margin-bottom: 0;
 }
 .titulo>p{
