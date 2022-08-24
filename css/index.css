@@ -1,7 +1,4 @@
-/**{
-  padding-left: 3%;
-  padding-right: 3%;
-}*/
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 body{
@@ -37,6 +34,8 @@ body{
   font: normal 600 3rem/160% 'Playfair Display',serif;
   width: 50%;
   color: #FFFFFF;
+  margin-top: 155px;
+  margin-bottom: 5%;
 }
 .titulo>h1{
   margin-top: 20%;
@@ -162,8 +161,8 @@ section.content-01 p{
   width: 80%;
   font-family: 'Lato';
   font-weight: 400;
-  padding: 2%;
-  font-size: 1.25rem;
+  padding: 20px;
+  font-size: 1rem;
   text-align: center;
   border: none;
   transition: background 0.7s,color 0.5s;
@@ -179,15 +178,15 @@ section.content-01 p{
 .btn-padrao:disabled{
   background: #D2D2D2;
 }
-
-
 .benefits{
   margin: 15% 5% auto 5%  ;
   display: flex;
+  text-align: center;
   justify-content: space-between;
 }
 .benefit>p{
   font-family: 'Lato';
+  text-align: center;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 26px;
@@ -205,6 +204,7 @@ section.content-01 p{
   color: #FFFCF6;
   margin-top: 2%;
   height: 60%;
+  margin-bottom: 120px;
 }
 .catalogs p{
   font-family: 'Lato';
@@ -213,6 +213,7 @@ section.content-01 p{
   line-height: 26px;
   letter-spacing: 0.04em;
   color: #FFFCF6;
+  max-width:70% ;
 }
 .catalog-cafe{
   display: flex;
@@ -277,8 +278,10 @@ section.content-01 p{
   border: 2px solid #0B1D03;
   border-radius: 4px;
   color: #969696;
-  margin-right: 15px;
   outline: none;
+  background-image: url('../img/Vector.png');
+  background-repeat: no-repeat;
+  background-position: 98% center;
 }
 .inputs{
   display: flex;
@@ -300,7 +303,7 @@ section.content-01 p{
   font-family: Lato,Arial, Helvetica, sans-serif;
 }
 footer{
-  background-color: #F3F3F3;
+  background-color: #F7F1E6;
   margin: 0;
   text-align: center ;
   font-family: Lato,Arial, Helvetica, sans-serif;
