@@ -4,7 +4,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #FFFCF6 ;
+  background-color: #FFFCF6;
 }
 .hero{
   box-sizing: border-box;
@@ -304,6 +304,7 @@ section.content-01 p{
 }
 footer{
   background-color: #F7F1E6;
+  color: #0B1D03;
   margin: 0;
   text-align: center ;
   font-family: Lato,Arial, Helvetica, sans-serif;
