@@ -25,6 +25,29 @@ body{
 .container-flex-spaced{
   justify-content: space-between;
 }
+.slider-tracks{
+  margin-top: 8%;
+  cursor: pointer;
+  padding: 3px;
+  display: flex;
+}
+.slider-track__items:hover{
+  opacity: 1;
+}
+.slider-track__items{
+  transition: opacity 0.5s;
+  width: 32px;
+  height: 4px;
+  border-radius: 10px;
+  background: white;
+  opacity:0.5;
+}
+.slider-track__items:not(:last-child){
+  margin-right: 8px;
+}
+.slider-track__items--active{
+  opacity:1;
+}
 
 .indicator-label{
   background-color: white;
@@ -34,11 +57,10 @@ body{
   font: normal 600 3rem/160% 'Playfair Display',serif;
   width: 50%;
   color: #FFFFFF;
-  margin-top: 155px;
   margin-bottom: 5%;
 }
 .titulo>h1{
-  margin-top: 20%;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 .titulo>p{
