@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffe</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap">
 </head>
 <body>
   <section class="hero">
     <header class="header container-flex container-flex-spaced">
-      <img alt='Menu' src="img/Burgerburguer.svg"> 
-      <img alt='logo' src="img/BlackCoffeelogo.png"> 
+      <img alt='Menu' src="img/Burgerburguer.svg">
+      <img alt='logo' src="img/BlackCoffeelogo.png">
       <img alt='Sacola de compras' src="img/Vectorbag.svg">
     </header>
     <div class="hero__holder">
@@ -45,7 +46,7 @@
     <section class="content-02">
       <div class="img"><img src="img/muitaMais.png" alt="café em uma mesa"></div>
       <div class="txt">
-      <h3>...e muito mais</h3>  
+      <h3>...e muito mais</h3>
       <p>Não esqueça de dar uma olhada em nossa seleção de sobremesas deliciosas!</p>
       </div>
     </section>
@@ -131,7 +132,7 @@
   </main>
   <section class="find-section">
     <h2>Encontre uma loja</h2>
-    <div class='inputs'> 
+    <div class='inputs'>
       <select name="" id="select-city">
         <option value="">Encontre uma cidade</option>
         <option value="">São Paulo</option>
@@ -174,11 +175,72 @@
           <li><a href=""><img src="img/twiter.png" alt="Twitter"></a></li>
         </ul>
       </div>
-      
+
     </div>
     <div class="authors-bar">
       <p>DESIGNED BY <strong>mentorama</strong></p>
     </div>
   </footer>
+  <!--
+  Os conceitos ensinados no módulo não foram aplicados em seu formulário.
+-->
+  <aside class="pop-out">
+    <aside class="cadastro__product">
+      <h4>Seus Produtos: 1 item</h4>
+      <div class="card">
+        <img src="img/preoduto.png" alt="Sacola de café">
+        <section class="content">
+          <p>RUANDA UMARAGE NAT</p>
+          <strong>40R$</strong>
+          <span>Excluir</span>
+        </section>
+      </div>
+    </aside>
+  <article class="cadastro" >
+    <div class="cadastro__body">
+      <div class="cadastro__body__titles">
+        <span>Dados personais</span>
+        <span class="cadastro__body--unused"> <img src="img/Arrow 1.svg"></span>
+        <span class="cadastro__body--unused">Formas de Pagamento</span>
+        <span class="cadastro__body--unused"> <img src="img/Arrow 1.svg"></span>
+        <span class="cadastro__body--unused">Concluir</span>
+      </div>
+
+    <form>
+      <input  class="input__form" placeholder="Nome" type="text">
+      <input class="input__form" placeholder="Número de telefone" type="number">
+      <input class="input__form"  placeholder="Email" type="email">
+      <input class="input__form"  placeholder='endereço de Entrega' type="text">
+      <textarea class="input__form__comentario" placeholder="Comentários" cols="30" rows="10"></textarea>
+      <button  class="button__form">Seguinte</button>
+    </form>
+    </div>
+    <img class="cadastro--sair" src="img/Vector.svg" alt="Sair">
+  </article>
+  <article class="cadastro" style="display:block">
+    <div class="cadastro__body">
+      <div class="cadastro__body__titles">
+        <span class="cadastro__body--unused">Dados personais</span>
+        <span> <img src="img/Arrow 1.svg"></span>
+        <span>Formas de Pagamento</span>
+      </div>
+      <img class="cadastro--sair" src="img/Vector.svg" alt="Sair">
+
+      <div class="container--flex">
+        <button class="button__form button__form--2col">Com cartão</button>
+        <button class="button__form button__form--2col button__form--unused">Com Dinheiro</button>
+      </div>
+      <form>
+        <input type="number" class="input__form" placeholder="Número do Cartão">
+        <div class="container--flex">
+          <input type="date" class="input__form" placeholder="MM/AA">
+          <input type="text" class="flex__separator input__form" placeholder="CVV">
+        </div>
+        <input type="text" class="input__form input__form--fix" placeholder="Títulos do Cartão">
+        <button class="button__form">Concluir</button>
+      </form>
+    </div>
+  </article>
+</aside>
 </body>
 </html>
