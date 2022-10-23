@@ -1,10 +1,13 @@
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.pop-out{
+  display:block;
+}
 article{
   background-color: white;
   width: 50%;
-  padding: 10px 40px 0 30px;
+  padding: 0px 40px 0 30px;
   display: block;
   height: 100vh;
   position: absolute;
@@ -13,53 +16,62 @@ article{
   box-sizing: border-box;
   font-size: 1.4em;
 }
+.pop-out form{
+  display: flex;
+  flex-direction: column;
+}
 .input__form{
-  height: 60px;
+  height: 120px;
+  font-size:2em;
 }
 textarea{
   height: 13em;
 }
 .input__form,textarea{
-  font-family: inherit;
+  font-family: 'Lato';
   resize: none;
   border: 2px solid #0B1D03;
   border-radius: 4px;
   display: block;
   width: 100%;
-  margin-top: 12px;
-  padding: 12px 12px;
+  margin-top: 24px;
+  padding: 15px;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 140%;
   color: #1F1F1F;
   transition: all 0.5s;
   box-sizing: border-box;
+  outline: 0px solid #0B1D03;
+}
+input.input__form:hover, textarea:hover{
+  border: 2px solid #A0996C;
+  border-radius: 4px;
   outline: none;
 }
-.input__form:hover{
+input.input__form:focus,textarea:focus {
   border: 2px solid #A0996C;
   border-radius: 4px;
-}
-.input__form:focus{
-  border: 2px solid #A0996C;
-  border-radius: 4px;
+  outline: none;
 }
 .input__form:invalid{
-  color: #E30613;
+  /*color: #E30613;
   border: 2px solid #E30613;
-  border-radius: 4px;
+  border-radius: 4px;*/
 }
 .button__form{
-  margin-top: 12px;
+  margin-top: 44px;
   padding: 12px 12px;
   background: #0B1D03;
   border-radius: 4px;
-  width: 76px;
   color: white;
   width: 100%;
   box-sizing: border-box;
   transition: all 0.7s;
+  height: 80px;
+  font-size: 0.9em;
+  font-weigt:700;
 }
 .button__form:hover{
   background: #FFFCF6;
@@ -90,13 +102,16 @@ textarea{
   right: 4px;
 }
 .cadastro__body{
-
+  color: #0B1D03;
 }
 .cadastro__body__titles{
   display: flex;
   width: 100%;
   justify-content: flex-start;
   flex-wrap:nowrap;
+  margin-top: 30px;
+  font-size: 1.1em;
+  margin-bottom: 32px;
   overflow-x: hidden;
 }
 .cadastro__body__titles > span{
@@ -137,18 +152,24 @@ textarea{
   margin-bottom: 30%;
 }
 .cadastro__product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   position: absolute;
   top: 0;
-  left: calc(25% + 1px);
+  left: calc(22% + 1px);
   box-sizing: border-box;
-  width: 25%;
   background-color: white;
-  padding: 24px;
+  width: 28%;
+  height: 34%;
+  padding: 30px;
 }
 aside.cadastro__product>h4{
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 1.4em;
+  font-size: 2.3em;
+  font-weight: 900;
+  font-family: 'Lato';
   letter-spacing:1px;
 }
 .card{
@@ -157,7 +178,9 @@ aside.cadastro__product>h4{
   display: grid;
   grid-template-columns: 1fr 3fr;
   padding: 12px 12px 13px 12px;
-  align-items: flex-flex-start;
+  height: 59%;
+  align-items: center;
+  font-family: 'Lato';
 }
 .card >img{
   width: 70px;
@@ -172,17 +195,17 @@ aside.cadastro__product>h4{
 }
 .card .content p{
   margin-top: 0;
+  font-size: 1.7em;
   margin-bottom: 0;
 }
 .content strong{
   margin-top: 5px;
   display: block;
-  font-size: 1.1em;
-  margin-bottom: 10px
+  font-size: 1.7em;
+  margin-bottom: 10px;
+  font-family: 'Lato'
 }
 .cadastro__product  span{
   color: #A0996C;
-}
-.pop-out{
-  display:none;
+  font-size: 1.6em;
 }

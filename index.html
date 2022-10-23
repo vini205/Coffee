@@ -181,9 +181,6 @@
       <p>DESIGNED BY <strong>mentorama</strong></p>
     </div>
   </footer>
-  <!--
-  Os conceitos ensinados no módulo não foram aplicados em seu formulário.
--->
   <aside class="pop-out">
     <aside class="cadastro__product">
       <h4>Seus Produtos: 1 item</h4>
@@ -196,51 +193,26 @@
         </section>
       </div>
     </aside>
-  <article class="cadastro" >
+    <article class="cadastro">
     <div class="cadastro__body">
       <div class="cadastro__body__titles">
-        <span>Dados personais</span>
+        <span >Dados personais</span>
         <span class="cadastro__body--unused"> <img src="img/Arrow 1.svg"></span>
         <span class="cadastro__body--unused">Formas de Pagamento</span>
         <span class="cadastro__body--unused"> <img src="img/Arrow 1.svg"></span>
         <span class="cadastro__body--unused">Concluir</span>
       </div>
-
     <form>
-      <input  class="input__form" placeholder="Nome" type="text">
-      <input class="input__form" placeholder="Número de telefone" type="number">
-      <input class="input__form"  placeholder="Email" type="email">
-      <input class="input__form"  placeholder='endereço de Entrega' type="text">
+      <input  class="input__form" required placeholder="Nome" type="text">
+      <input class="input__form" required placeholder="Número de telefone" type="tel">
+      <input class="input__form" required placeholder="Email" type="email">
+      <input class="input__form" required placeholder='Endereço de Entrega' type="text">
       <textarea class="input__form__comentario" placeholder="Comentários" cols="30" rows="10"></textarea>
       <button  class="button__form">Seguinte</button>
     </form>
     </div>
     <img class="cadastro--sair" src="img/Vector.svg" alt="Sair">
   </article>
-  <article class="cadastro">
-    <div class="cadastro__body">
-      <div class="cadastro__body__titles">
-        <span class="cadastro__body--unused">Dados personais</span>
-        <span> <img src="img/Arrow 1.svg"></span>
-        <span>Formas de Pagamento</span>
-      </div>
-      <img class="cadastro--sair" src="img/Vector.svg" alt="Sair">
-
-      <div class="container--flex">
-        <button class="button__form button__form--2col">Com cartão</button>
-        <button class="button__form button__form--2col button__form--unused">Com Dinheiro</button>
-      </div>
-      <form>
-        <input type="number" class="input__form" placeholder="Número do Cartão">
-        <div class="container--flex">
-          <input type="date" class="input__form" placeholder="MM/AA">
-          <input type="text" class="flex__separator input__form" placeholder="CVV">
-        </div>
-        <input type="text" class="input__form input__form--fix" placeholder="Títulos do Cartão">
-        <button class="button__form">Concluir</button>
-      </form>
-    </div>
-  </article>
-</aside>
+  </aside>
 </body>
 </html>
