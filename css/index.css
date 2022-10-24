@@ -322,7 +322,7 @@ section.content-01 p{
 }
 
 .footer-links{
-  background-color: #F3F3F3;
+  background-color: #F7F1E6;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -361,6 +361,9 @@ footer h5{
 .social{
   display: flex;
   flex-direction: row;
+}
+.authors-bar{
+  background-color: #F7F1E6;
 }
 .authors-bar>p{
   margin: 10px 0 0 0;
