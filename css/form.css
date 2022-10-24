@@ -2,7 +2,7 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .pop-out{
-  display:block;
+  display:none;
 }
 article{
   background-color: white;
