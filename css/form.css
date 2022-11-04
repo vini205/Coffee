@@ -1,7 +1,7 @@
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-aside.modal--opened {
+.pop-out{
   display:block;
 }
 .pop-out{
@@ -14,7 +14,7 @@ article{
   padding: 0px 40px 0 30px;
   display: block;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   box-sizing: border-box;
@@ -22,14 +22,14 @@ article{
 }
 .pop-out form{
   display: flex;
+  height: 100%;
   flex-direction: column;
 }
 .input__form{
-  height: 120px;
-  font-size:2em;
+  height: 11vh;
 }
 textarea{
-  height: 13em;
+  height: 24%;
 }
 .input__form,textarea{
   font-family: 'Lato';
@@ -38,11 +38,11 @@ textarea{
   border-radius: 4px;
   display: block;
   width: 100%;
-  margin-top: 24px;
-  padding: 15px;
+  margin-top: 12px;
+  padding:12px;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 1.7rem;
   line-height: 140%;
   color: #1F1F1F;
   transition: all 0.5s;
@@ -53,6 +53,9 @@ input.input__form:hover, textarea:hover{
   border: 2px solid #A0996C;
   border-radius: 4px;
   outline: none;
+}
+input.input__form:first-child{
+  margin-top: -11px;
 }
 input.input__form:focus,textarea:focus {
   border: 2px solid #A0996C;
@@ -65,7 +68,7 @@ input.input__form:focus,textarea:focus {
   border-radius: 4px;*/
 }
 .button__form{
-  margin-top: 44px;
+  margin-top: 11px;
   padding: 12px 12px;
   background: #0B1D03;
   border-radius: 4px;
@@ -73,8 +76,8 @@ input.input__form:focus,textarea:focus {
   width: 100%;
   box-sizing: border-box;
   transition: all 0.7s;
-  height: 80px;
-  font-size: 0.9em;
+  height: 8vh;
+  font-size: 1em;
   font-weigt:700;
 }
 .button__form:hover{
@@ -107,14 +110,17 @@ input.input__form:focus,textarea:focus {
 }
 .cadastro__body{
   color: #0B1D03;
+  height: 100%;
 }
 .cadastro__body__titles{
   display: flex;
+  max-height: 51px;
+  overflow: visible;
   width: 100%;
   justify-content: flex-start;
   flex-wrap:nowrap;
   margin-top: 30px;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 32px;
   overflow-x: hidden;
 }
@@ -159,13 +165,14 @@ input.input__form:focus,textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: calc(22% + 1px);
   box-sizing: border-box;
   background-color: white;
   width: 28%;
   height: 34%;
+  max-height: 35vh;
   padding: 30px;
 }
 aside.cadastro__product>h4{
