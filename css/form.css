@@ -10,7 +10,7 @@ article{
   padding: 0px 40px 0 30px;
   display: block;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   box-sizing: border-box;
@@ -22,8 +22,7 @@ article{
   flex-direction: column;
 }
 .input__form{
-  height: 12%;
-  font-size:2em;
+  height: 11vh;
 }
 textarea{
   height: 24%;
@@ -39,7 +38,7 @@ textarea{
   padding:12px;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 1.7rem;
   line-height: 140%;
   color: #1F1F1F;
   transition: all 0.5s;
@@ -73,7 +72,7 @@ input.input__form:focus,textarea:focus {
   width: 100%;
   box-sizing: border-box;
   transition: all 0.7s;
-  height: 11%;
+  height: 8vh;
   font-size: 1em;
   font-weigt:700;
 }
@@ -111,6 +110,8 @@ input.input__form:focus,textarea:focus {
 }
 .cadastro__body__titles{
   display: flex;
+  max-height: 51px;
+  overflow: visible;
   width: 100%;
   justify-content: flex-start;
   flex-wrap:nowrap;
@@ -160,13 +161,14 @@ input.input__form:focus,textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: calc(22% + 1px);
   box-sizing: border-box;
   background-color: white;
   width: 28%;
   height: 34%;
+  max-height: 35vh;
   padding: 30px;
 }
 aside.cadastro__product>h4{
