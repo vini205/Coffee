@@ -118,7 +118,7 @@ input.input__form:focus,textarea:focus {
   margin-top: 30px;
   font-size: 1em;
   margin-bottom: 32px;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .cadastro__body__titles > span{
   margin-right: 2rem;
@@ -174,7 +174,7 @@ input.input__form:focus,textarea:focus {
 aside.cadastro__product>h4{
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: 900;
   font-family: 'Lato';
   letter-spacing:1px;
@@ -202,7 +202,7 @@ aside.cadastro__product>h4{
 }
 .card .content p{
   margin-top: 0;
-  font-size: 1.7em;
+  font-size: 1.1em;
   margin-bottom: 0;
 }
 .content strong{
@@ -214,5 +214,5 @@ aside.cadastro__product>h4{
 }
 .cadastro__product  span{
   color: #A0996C;
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
