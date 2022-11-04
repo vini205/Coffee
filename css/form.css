@@ -2,12 +2,11 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .pop-out{
-  display:block;
-}
-.pop-out{
   display: none;
 }
-
+dialog.modal--opened{
+  display: block;
+}
 article{
   background-color: white;
   width: 50%;
@@ -115,14 +114,13 @@ input.input__form:focus,textarea:focus {
 .cadastro__body__titles{
   display: flex;
   max-height: 51px;
-  overflow: visible;
   width: 100%;
   justify-content: flex-start;
   flex-wrap:nowrap;
   margin-top: 30px;
   font-size: 1em;
   margin-bottom: 32px;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .cadastro__body__titles > span{
   margin-right: 2rem;
