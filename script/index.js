@@ -9,3 +9,7 @@ TOGGLE_MODAL.forEach((item) => {
   MODAL.classList.toggle('modal--opened')
   })
 });
+
+MODAL.addEventListener('focusout',()=>{
+  MODAL.classList.remove('modal--opened')
+})
