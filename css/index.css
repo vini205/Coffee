@@ -73,6 +73,7 @@ body{
   font-family: 'Lato',sans-serif;
   font-weight: 300;
   margin-bottom: 6% ;
+  max-width: 72%;
 }
 .btn-seta{
   transform: rotate(180deg);
