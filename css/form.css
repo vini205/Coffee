@@ -10,7 +10,7 @@ dialog{
   width: 100%;
   height: 100%;
   background: rgb(0,0,0,0.4);
-  
+
 }
 article{
   position: fixed;
@@ -119,7 +119,6 @@ input.input__form:focus,textarea:focus {
 .cadastro__body__titles{
   display: flex;
   max-height: 51px;
-  overflow: visible;
   width: 100%;
   justify-content: flex-start;
   flex-wrap:nowrap;
