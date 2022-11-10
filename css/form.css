@@ -5,12 +5,14 @@ dialog{
   position: fixed;
   right: 0;
   top: 0;
-  display: block;
+  display: none;
   border: none;
   width: 100%;
   height: 100%;
   background: rgb(0,0,0,0.4);
-
+}
+.pop-out{
+  display: block;
 }
 article{
   position: fixed;
