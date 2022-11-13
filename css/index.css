@@ -1,3 +1,21 @@
+@font-face {
+  src: url('font/Gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-family: Gilroy-Regular;
+  font-weight: 700;
+}
+@font-face {
+  src: url('font/Gilroy/Gilroy-Black.ttf');
+  font-family: Gilroy-Black;
+}
+@font-face {
+  src: url('font/Gilroy/Gilroy-Medium.ttf');
+  font-family: Gilroy-Medium;
+}
+@font-face {
+src: url( 'font/PlayfairDisplay-VariableFont_wght.ttf');
+font-family: Playfair;
+font-weight: 800;
+}
 body{
   margin: 0;
   padding: 0;
@@ -58,20 +76,21 @@ body{
   height: 2px;
 }
 .titulo{
-  font: normal 600 3rem/160% 'Playfair Display',serif;
   width: 53%;
   color: #FFFFFF;
   margin-bottom: 5%;
 }
 .titulo>h1{
+  font-family: Playfair,serif;
+  font-size: 4.5em;
   margin-top: 10px;
   margin-bottom: 0;
 }
 .titulo>p{
   margin-top: 3px;
   font-size: 2rem;
-  font-family: 'Lato',sans-serif;
-  font-weight: 300;
+  font-family: Gilroy-Medium,serif;
+  font-weight: 400;
   margin-bottom: 6% ;
   max-width: 72%;
 }
@@ -98,6 +117,7 @@ main{
 section.content-01 h3{
   padding-left: 53%;
   margin-left: 0;
+
 }
 section.content-01 p{
   padding-left:53%;
@@ -107,7 +127,7 @@ section.content-01 p{
   margin-bottom: 22%;
 }
 .content-01 h3, .content-02 h3{
-   font-family: 'Playfair Display';
+  font-family: Playfair,serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3.5rem;
@@ -115,9 +135,8 @@ section.content-01 p{
   color: #0B1D03;
 }
 .content-01 p ,.content-02 p{
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'Gilroy','Lato', monospace;
+  font-weight: 800;
   font-size: 2rem;
   line-height: 40px;
   color: #0B1D03;
@@ -136,9 +155,7 @@ section.content-01 p{
   clear: right;
 }
 .title-cards-sec{
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
+  font-family: Playfair,serif;
   font-size: 3.5rem;
   line-height: 60px;
   color: #A0996C;
@@ -155,7 +172,7 @@ section.content-01 p{
   padding: 8%;
 }
 .cart>h4{
-  font-family: 'Lato';
+  font-family: 'Gilroy','Lato';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -166,7 +183,7 @@ section.content-01 p{
   margin-top: 0;
 }
 .cart p>strong{
-  font-family: 'Lato';
+  font-family: 'Gilroy','Lato';
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -174,7 +191,7 @@ section.content-01 p{
   color: #0B1D03;
 }
 .cart p{
-  font-family: 'Lato';
+  font-family: 'Gilroy','Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
@@ -213,9 +230,9 @@ section.content-01 p{
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 }
 .benefit>p{
-  font-family: 'Lato';
+  font-family: 'Gilroy','Lato';
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.25rem;
   line-height: 26px;
   color: #0B1D03;
@@ -224,10 +241,6 @@ section.content-01 p{
 .catalogs{
   display: flex;
   justify-content: space-between;
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3.5rem;
   line-height: 60px;
   color: #FFFCF6;
   margin-top: 2%;
@@ -235,13 +248,18 @@ section.content-01 p{
   margin-bottom: 120px;
 }
 .catalogs p{
-  font-family: 'Lato';
+  font-family: 'Gilroy','Lato';
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 26px;
   letter-spacing: 0.04em;
   color: #FFFCF6;
   max-width:70% ;
+}
+.catalogs h4{
+  font-family: Playfair;
+  margin-bottom: 10px;
+  font-size: 3.5em;
 }
 .catalog-cafe{
   display: flex;
@@ -256,7 +274,7 @@ section.content-01 p{
   background-size: cover;
   background-position: center center;
   padding: 10px;
-
+  padding-left: 34px;
 }
 .catalog-acessorios{
   display: flex;
@@ -269,6 +287,7 @@ section.content-01 p{
   background-size: cover;
   background-position: center center;
   padding: 10px;
+  padding-left: 34px;
 }
 
 .find-section{
@@ -288,7 +307,7 @@ section.content-01 p{
   border-radius: 4px;
   flex-grow: 1;
   padding: 15px;
-  font-family: 'Lato';
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: 500;
   font-size:1.25rem;
@@ -299,7 +318,7 @@ section.content-01 p{
 #search-map{
   flex-grow: 3;
   padding: 15px;
-  font-family: 'Lato';
+  font-family: 'Gilroy';
   font-style: normal;
   font-weight: 500;
   font-size:1.25rem;
@@ -328,14 +347,14 @@ section.content-01 p{
   display: flex;
   justify-content: space-between;
   padding: 0 3%;
-  font-family: Lato,Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy',Arial, Helvetica, sans-serif;
 }
 footer{
   background-color: #F7F1E6;
   color: #0B1D03;
   margin: 0;
   text-align: center ;
-  font-family: Lato,Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy',Arial, Helvetica, sans-serif;
 }
 footer h5{
   margin-top: 0;
@@ -349,11 +368,12 @@ footer h5{
   padding-left: 0;
 }
 .footer-links a{
-  font-family: 'Lato';
+  font-family: 'Gilroy';
   font-weight: 400;
   font-size: 1.25rem;
   text-decoration: none;
   color: #1F1F1F;
+  text-transform: capitalize;
 }
 .footer-links > div{
   text-align: left;
