@@ -1,7 +1,121 @@
 @font-face {
-src: url( 'font/PlayfairDisplay-VariableFont_wght.ttf');
-font-family: Playfair;
-font-weight: 800;
+  src: url( 'font/PlayfairDisplay-VariableFont_wght.ttf');
+  font-family: Playfair;
+  font-weight: 800;
+}
+@media screen and (max-width:563px) {
+  .hero__holder div.titulo h1 {
+    font-size: 36px;
+  }
+  .hero__holder div.titulo p {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+}
+@media screen and (max-width:768px) {
+  div.hero__holder{
+    position: static;
+    transform: translateY(0);
+  }
+  div.titulo{
+    width: auto;
+  }
+  div.titulo h1{
+    font-size: 3rem
+  }
+  div.titulo p{
+    font-size: 1.6rem;
+  }
+  div.setas{
+    text-align: end;
+  }
+  div.setas img{
+    height: 40px;
+  }
+  main.main{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section.content-01 h3,section.content-02 h3{
+    font-size: 2rem;
+    margin-bottom: -24px;
+  }
+  section.content-01 h3{
+    padding-left: 44%;
+  }
+  section.content-01 p,section.content-02 p{
+    font-size: 1.3rem;
+  }
+  section.content-01 p{
+    width: 55%;
+    padding-left:44%;
+  }
+  .content-01 div.img img{
+    width: 43%;
+    object-fit: cover;
+    height: 300px;
+  }
+  div.product-carts{
+    grid-template-columns: repeat(2,1fr);
+  }
+  button.btn-padrao{
+    font-size: 15px;
+  }
+  div.benefits{
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+  }
+  div.catalogs{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  div.catalog-cafe,div.catalog-acessorios{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  div.catalog-acessorios{
+    background-position: top;
+  }
+  div.inputs{
+    flex-direction: column;
+  }
+  select#select-city{
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  img.footer__logo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  div.footer-links{
+    flex-wrap: wrap;
+  }
+  div.footer-links>div:nth-child(2),div.footer-links>div:nth-child(3){
+    width: 50%;
+  }
+  div.footer-links>div:nth-child(3){
+    width: 42%;
+  }
+  div.footer-links>div:nth-child(1){
+    width: 100%;
+  }
+  div.footer-links>div:last-child{
+    display: none;
+  }
+  div.footer-links>div h5{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  div.footer-links a{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  div.authors-bar p{
+    font-size: 1.2em;
+  }
 }
 body{
   font-family: 'Gilroy','Lato', sans-serif;
@@ -73,7 +187,7 @@ body{
 }
 .titulo>h1{
   font-family: Playfair,serif;
-  font-size: 4.5em;
+  font-size: 2.5em;
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -105,12 +219,12 @@ main{
   clear: left;
 
 }
-section.content-01 h3{
+.content-01 h3{
   padding-left: 53%;
   margin-left: 0;
 
 }
-section.content-01 p{
+.content-01 p{
   padding-left:53%;
   width: 44%;
 }
