@@ -35,6 +35,7 @@
   main.main{
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 30px;
   }
   section.content-01 h3,section.content-02 h3{
     font-size: 2rem;
@@ -332,6 +333,29 @@ main{
   text-align: center;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 }
+.benefit > div {
+  background: url('../img/sprite_benefits.svg');
+  width: 54px;
+  height: 50px;
+  background-size: cover;
+  margin: auto;
+}
+div.benefits-1{
+  background-position-x: 313px;
+}
+div.benefits-2{
+  background-position-x: 259px;
+}
+div.benefits-3{
+  background-position-x: 214px;
+}
+div.benefits-4{
+  background-position-x: 165px;
+  background-position-y: 2px;
+}
+div.benefits-5{
+  background-position-x: 116px;
+}
 .benefit>p{
   font-family: 'Gilroy','Lato',sans-serif;
   text-align: center;
@@ -341,6 +365,9 @@ main{
   color: #0B1D03;
 }
 
+.benefit img{
+  display: none;
+}
 .catalogs{
   display: flex;
   justify-content: space-between;
