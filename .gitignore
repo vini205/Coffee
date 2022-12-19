@@ -1,2 +1,3 @@
 .vscode
-img/trash
+src/img/trash
+node_modules
