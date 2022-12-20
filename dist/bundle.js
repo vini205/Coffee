@@ -529,7 +529,7 @@ var update = injectStylesIntoStyleTag_default()(css/* default */.Z, options);
 
        /* harmony default export */ const src_css = (css/* default */.Z && css/* default.locals */.Z.locals ? css/* default.locals */.Z.locals : undefined);
 
-;// CONCATENATED MODULE: ./index.js
+;// CONCATENATED MODULE: ./src/js/index.js
 
 
 console.log('Working');
