@@ -1,13 +1,13 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
   output:{
-    path: path.resolve(__dirname,'dist'),
-    publicPath:'',
+    path: path.resolve(__dirname,'dist/'),
+    publicPath:'/',
     filename:'bundle.js',
   },
   mode:'production',
@@ -45,6 +45,11 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename:"bundle.css"
-    }),    
+    }),  
+    new HtmlWebpackPlugin({
+			template: './src/html/index.html',
+			minify: true,
+      hash:true
+		}),  
   ],
   };
