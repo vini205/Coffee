@@ -338,35 +338,37 @@ main{
 }
 
 .benefits{
-  margin: 15% auto auto auto;
+  margin: 15% auto;
   display: grid;
   text-align: center;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-  & > div{
-    background: url('../img/sprite_benefits.svg');
-    width: 54px;
-    height: 50px;
-    background-size: cover;
-    margin: auto;
-  }
 }
-div.benefits{
+.benefit> div{
+  background: url('../img/sprite_benefits.svg');
+  background-position: 313px;
+  width: 54px;
+  height: 50px;
+  background-size: cover;
+  margin: auto;
+}
+.benefits{
   &-1{
-    background-position-x: 313px;
+    background-position: 313px;
   }
   &-2{
-    background-position-x: 259px;
+    background-position: 259px;
   }
   &-3{
-    background-position-x: 214px;
+    background-position: 214px;
   }
   &-4{
-    background-position-x: 165px;
+    background-position: 165px;
     background-position-y: 2px;
   }
   &-5{
-    background-position-x: 116px;
+    background-position: 116px;
   }
+
 }
 
 .benefit>p{

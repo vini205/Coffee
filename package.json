@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "b": "webpack --config webpack.config.js",
-    "webpack": "webpack"
+    "l": "lessc dist/bundle.css bundle.css --source-map=dist/bundle.css.map --source-map-rootpath=dist/bundle.css",
+    "webpack": "webpack",
+    "gulp": "gulp sourcemaps"
   },
   "repository": {
     "type": "git",

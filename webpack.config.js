@@ -7,10 +7,11 @@ module.exports = {
   entry: './src/js/index.js',
   output:{
     path: path.resolve(__dirname,'dist/'),
-    publicPath:'/',
+    publicPath:'',
     filename:'bundle.js',
   },
   mode:'production',
+  devtool: "source-map",
   module:{
     rules:[
       {
@@ -28,7 +29,11 @@ module.exports = {
             loader:MiniCssExtractPlugin.loader
           },
           {
-            loader:"css-loader",
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2,
+              sourceMap: true
+            },
           },
           {
             loader:"less-loader",
