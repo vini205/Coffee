@@ -20,11 +20,17 @@
     font-size: 20px;
     margin-bottom: 0;
 }
+
 }
 @media screen and (max-width:768px) {
   div.hero__holder{
     position: static;
     transform: translateY(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
   }
   div.titulo{
     width: auto;
@@ -84,6 +90,7 @@
     margin-top: 10px;
     padding-left: 15px;
     box-sizing: border-box;
+    max-height: 50vh;
   }
   div.catalog-acessorios{
     background-position: top;
@@ -127,6 +134,170 @@
     font-size: 1.2em;
   }
 }
+@media screen and (max-width:535px) {
+  body> section.hero{
+    header.header{
+      align-items: center;
+      padding-top: 10px;
+      img:first{
+        height: 50px;
+      }
+      img{
+        height: 40px;
+      }
+      
+    }
+    div.hero__holder{
+      justify-content: flex-start;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titulo{
+      text-align: center;
+      h1{
+        font-size: 47px;
+        margin-bottom: 60px;
+      }
+      p{
+        margin-bottom: 60px;
+        font-size: 40px;
+        max-width: 100%;
+      }
+      margin-bottom: 60px;
+    }
+    .setas img{
+      height: 50px;
+      text-align: center;
+    }
+  }
+  body > main.main{
+    section.content-01, section.content-02{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100%;
+      }
+      h3,p{
+        padding-left: 0;
+        width: auto;
+        text-align: justify;
+      }
+    }
+    div.product-carts {
+      grid-template-columns: repeat(1,1fr);
+      gap:30px;
+      .cart{
+        height: auto;
+        font-size: 24px;
+        h4{
+          font-size: 19px;
+        }
+        p>strong{
+          display: block;
+          font-size: 35px;
+        }
+      }
+  }
+  aside{
+    div.benefits{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: scroll;
+      div.benefit{
+        margin: 0 25px;
+      }
+      &::-webkit-scrollbar{
+        width: 20px;
+      }
+      &::-webkit-scrollbar-thumb{
+        background: #0B1D03;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track-piece{
+        background-color: rgba(0, 0, 0, 0.219);
+      }
+    }
+  }
+  }
+  body > dialog.pop-out{
+    aside.cadastro__product{
+      height: auto;
+      max-height: 0100%;
+      padding: 0;
+      margin-bottom: 50px;
+      position: static;
+      width: 100%;
+    }
+    article.cadastro{
+      width: 100%;
+      .cadastro__body{
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+          width: 20px;
+        }
+        &::-webkit-scrollbar-thumb{
+          background: rgba(11, 29, 3, 0.562);
+          border-radius: 10px;
+        }
+        &::-webkit-scrollbar-track-piece{
+          background-color: rgba(0, 0, 0, 0.219);
+        }
+      }
+      .cadastro__body__titles{
+        margin-bottom: 20px;
+        flex-direction: column;
+        max-height: 100%;
+      }
+    }
+    form .input__form{
+      height: 9vh;
+      font-size: 19px;
+    }
+  }
+}
+@media screen and (max-width:340px){
+  body> section.hero{
+    header.header{
+      align-items: center;
+      padding-top: 10px;
+      flex-direction: column;
+      height: auto;
+      img{
+        margin: 30px 0;
+      }
+    }
+
+    .titulo{
+      h1{
+        font-size: 30px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+    .hero__holder{
+      margin-top: 20px;
+      justify-content: flex-start;
+    }
+
+  }
+  body > dialog.pop-out{
+    .cadastro__body{
+      h4{
+        font-size: 30px;
+      }
+    }
+    .cadastro__body__titles{
+        margin-bottom: 20px;
+        flex-direction: column;
+        max-height: 100%;
+      }
+    }
+  }
+
 body{
   font-family: @fonte-padrao;
   margin: 0;
@@ -405,6 +576,7 @@ main{
     font-family: Playfair,serif;
     margin-bottom: 10px;
     font-size: 3.5em;
+    overflow: hidden;
   }
 }
 .catalog-cafe{
@@ -562,8 +734,9 @@ dialog{
   display: block;
   form{
     display: flex;
-    height: 100%;
     flex-direction: column;
+    height: auto;
+    padding-bottom: 30px;
   }
 }
 article{
